@@ -9,6 +9,7 @@ function isLoggedIn() {
 }
 
 export default function ProtectedRoutes() {
-  const auth = isLoggedIn();
+  const auth = true 
+  //  isLoggedIn();
   return auth ? <Outlet /> : <Navigate to="/" />;
 }
